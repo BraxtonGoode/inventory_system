@@ -1,6 +1,5 @@
 // Purpose: View all items in inventory
-
-// libraries
+// Libraries
 use csv::Reader;
 use std::error::Error;
 use std::fs::File;
@@ -39,9 +38,11 @@ pub fn read_inventory_from_csv() -> Result<Vec<Item>, Box<dyn Error>> {
 // Notes: This function will clear the console before displaying the inventory. It will also handle any
 // errors that occur while reading the inventory and provide user-friendly messages.
 pub fn view_inventory() {
+    // Clear the console before displaying inventory
     clearscreen::clear().expect("Console failed to clear.");
     println!("Viewing inventory...");
     println!("--------------------");
+    // read inventory from CSV and display items
     match read_inventory_from_csv() {
         Ok(items) => {
             // Now you have items to iterate over!
@@ -55,6 +56,7 @@ pub fn view_inventory() {
                 println!("--------------------");
             }
             println!("✅ Inventory displayed successfully.");
+            // Ask user if they want to return to main menu
             println!("Are you ready to return to the main menu? (y/n)");
             loop {
                 let mut input = String::new();

@@ -1,3 +1,4 @@
+// The main menu for the inventory system
 // libraries
 use std::io;
 use clearscreen;
@@ -8,6 +9,13 @@ use crate::util::check_inventory;
 
 
 // Functions
+// (*** display_menu***)
+
+// Description: The display_menu function is responsible for showing the main menu to the user and handling their input to navigate through 
+// the different options of the inventory management system.
+// Args: None
+// Returns: None
+// Notes: This function runs in a loop until the user chooses to exit, ensuring continuous interaction with the inventory system.
 pub fn display_menu() {
     loop {
         // Clear the console
@@ -42,10 +50,5 @@ pub fn display_menu() {
         } else {
             println!("Invalid choice, please try again.");
         }
-        
-        // test the user's choice
-        // println!("You chose: {choice}");
     }
-
-
 }
