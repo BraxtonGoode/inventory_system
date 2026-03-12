@@ -4,9 +4,7 @@ The software that is created in this Rust project is a simple inventory manageme
 
 The purpose of writing this software was to learn and demonstrate my understanding of the Rust programming language. I wanted to create a practical application that would allow me to explore Rust's syntax, features, and libraries while also creating something useful. This project helped me gain hands-on experience with Rust's file handling, data structures, and some of the error handling capabilities.
 
-{Provide a link to your YouTube demonstration. It should be a 4-5 minute demo of the software running and a walkthrough of the code. Focus should be on sharing what you learned about the language syntax.}
-
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://www.youtube.com/watch?v=nT8ZD0AJSjU)
 
 # Development Environment
 
